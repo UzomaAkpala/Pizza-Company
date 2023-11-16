@@ -4,7 +4,7 @@ function Footer() {
   const closingHour = 22;
   const isOpen = hour >= openHour && hour <= closingHour;
   return (
-    <footer>
+    <footer className="footer">
       {isOpen ? (
         <h2>We are currently open</h2>
       ) : (
