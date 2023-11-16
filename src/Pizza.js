@@ -1,4 +1,6 @@
 function Pizza(props) {
+  // only use if/else and switch statements outside the component return logic.
+  if (props.soldOut) return null;
   return (
     <li className="pizza">
       <img src={props.photoName} alt={props.alt} />
