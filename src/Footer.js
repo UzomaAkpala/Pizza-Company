@@ -6,9 +6,9 @@ function Footer() {
   return (
     <footer className="footer">
       {isOpen ? (
-        <h2>We are currently open</h2>
+        <h2>We are currently open until {closingHour - 12}:00 pm</h2>
       ) : (
-        <h2>We are currently Closed!</h2>
+        <h2>We are currently Closed until {openHour}:00 am</h2>
       )}
     </footer>
   );
